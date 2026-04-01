@@ -32,13 +32,6 @@ Enabled-by-default stable sources in this repo:
 - LinkedIn jobs guest endpoint
 - Internshala scraper
 
-Additional implemented sources (can be enabled in config, may be blocked by anti-bot rules):
-
-- Indeed scraper
-- Naukri scraper
-- Foundit scraper
-- Generic RSS source
-
 ## Tech Stack
 
 - Python 3.11+
