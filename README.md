@@ -178,5 +178,8 @@ python -c "import sqlite3; c=sqlite3.connect('jobs.db'); c.row_factory=sqlite3.R
 
 ## License
 
-Choose a license before publishing (MIT is a common default for personal projects).
+MIT License
+
+Copyright (c) 2026 Harsh Thakur
+
 
