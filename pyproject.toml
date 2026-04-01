@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smart-job-alert"
+version = "0.1.0"
+description = "Smart Job Alert System (multi-source, filtering, ranking, alerts)"
+requires-python = ">=3.11"
+readme = "README.md"
+dependencies = []
+
+[project.scripts]
+smart-job-alert = "smart_job_alert.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "."}
+

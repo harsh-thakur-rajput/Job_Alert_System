@@ -1,0 +1,115 @@
+log_level: INFO
+database:
+  path: jobs.db
+user_profile_path: user_profile.json
+filters:
+  keywords:
+  - python
+  - backend
+  - django
+  - flask
+  - software engineer
+  - software developer
+  - java
+  - spring boot
+  - frontend developer
+  - react
+  - javascript
+  - typescript
+  - full stack developer
+  - web developer
+  - sde
+  - junior
+  - entry level
+  - fresher
+  keywords_exclude:
+  - senior
+  - lead
+  - manager
+  - principal
+  - staff
+  experience_max_years: 1.0
+  locations_allow: []
+scam:
+  enabled: false
+  allowed_domains: []
+  blocked_domains: []
+  min_description_chars: 10
+  payment_keywords:
+  - registration fee
+  - pay to apply
+  - processing fee
+  - training fee
+  - deposit
+  - upi
+  - paytm
+ranking:
+  min_score_to_alert: 0.3
+  max_jobs_per_alert: 10
+  prefer_salary: true
+  prefer_recent_days: 14
+scheduler:
+  enabled: true
+  interval_hours: 8
+telegram:
+  enabled: true
+  bot_token: ""
+  chat_id: ""
+email:
+  enabled: false
+  smtp_host: ''
+  smtp_port: 587
+  username: ''
+  password: ''
+  from_addr: ''
+  to_addrs: []
+  use_starttls: true
+sources:
+- type: remotive_api
+  name: Remotive
+  enabled: true
+  options:
+    query: software engineer
+    category: software-dev
+- type: indeed_scraper
+  name: Indeed
+  enabled: false
+  options:
+    query: python developer
+    location: india
+    pages: 1
+- type: naukri_scraper
+  name: Naukri
+  enabled: false
+  options:
+    query: python developer
+    location: india
+    pages: 1
+- type: linkedin_jobs
+  name: LinkedIn
+  enabled: true
+  options:
+    query: software engineer python java frontend developer
+    location: india
+    pages: 1
+- type: internshala_scraper
+  name: Internshala
+  enabled: true
+  options:
+    query: software engineer python java frontend developer
+    pages: 1
+- type: foundit_scraper
+  name: Foundit
+  enabled: false
+  options:
+    query: python developer
+    location: india
+    pages: 1
+- type: rss
+  name: Indeed RSS (example)
+  enabled: false
+  options:
+    feeds:
+    - name: Indeed Python
+      url: https://www.indeed.com/jobs?q=python&sort=date&fromage=3&rss=1
+      source_name: indeed_rss
